@@ -6,9 +6,6 @@
     font-family: poppins, sans-serif;
 }
 /* text style div */
-h1,p{
-    color: #ffff;
-}
 
 /* Primeira area do sire (navegação) */
 .containerNavbar{
@@ -19,7 +16,7 @@ h1,p{
     background-position: center;
     z-index: 1;
     position: relative;
-}go
+}
 
 .navbar{
     z-index: 2;
@@ -121,17 +118,10 @@ h1,p{
 
 
 
-/* new code */
 
-:root {
-    --cor-primary:#637FF3;
-    --cor-primary-dark:#1B2243;
-    --cor-secondary:#F3D263;
-    --cor-dark: #000;
-    --cor-white:#fff;
 
-    --border-standard:8px;
-}
+
+/* hero  */
 
 .hero-section {
     background-image: url(../img/preimeiroDesign.svg);
@@ -165,11 +155,12 @@ header img {
 }
 
 .nav-bar {
+
     width: 80%;
     height: 45px;
     background-color: var(--cor-white);
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: var(--margin-text);
 
     display: flex;
     justify-content: space-between;
@@ -178,11 +169,12 @@ header img {
     border-radius: 100px;
     padding-inline: 20px;
     top: 20px;
-    position: absolute;
+    position: fixed;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    z-index: 1;
+    z-index: 99;
 }
 
 .logo {
@@ -211,8 +203,13 @@ header img {
     list-style: none;
     text-decoration: none;
     color: var(--cor-dark);
-    font-weight: 600;
     cursor: pointer;
+    font-size: 16px;
+    transition: all 0.4s;
+}
+
+.nav-bar ul a:hover {
+    color: var(--cor-secondary);
 }
 
 .hero-content {
@@ -226,9 +223,10 @@ header img {
 }
 
 .hero-content h1 {
-    margin-top: 30px;
+    margin-top: var(--margin-text);
     font-size: 60px;
     font-weight: bolder;
+    color: var(--cor-white);
 }
 
 .emphasis {
@@ -236,18 +234,20 @@ header img {
 }
 
 .hero-content .hero-description {
-    margin: 30px 0;
+    margin: var(--margin-text) 0;
     max-width: 900px;
     text-align: center;
     font-size: 20px;
     line-height: 150%;
     font-weight: bold;
+    color: var(--cor-white);
 }
 
 .hero-content .hero-sub-description {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 30px;
+    color: var(--cor-white);
 }
 
 .button-geral.button-hero {
