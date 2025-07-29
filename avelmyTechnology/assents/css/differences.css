@@ -4,7 +4,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  height: auto;
+  min-height: 800px;
+  /* background: #000; */
   position: relative;
 }
 
@@ -91,7 +93,7 @@
 
 .differences-element-2 {
   position: absolute;
-  top: 80%;
+  top: 60%;
   right: 0;
   z-index: -1;
 }
