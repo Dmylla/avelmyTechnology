@@ -32,7 +32,6 @@
 
 .service-info , .service-list {
     flex: 1;
-    
 }
 
 .service-list ul {
@@ -47,8 +46,8 @@
 .service-list ul li {
     font-size: 25px;
     border-bottom: solid 1px var(--cor-grey-1);
-    width: 70%;
-    padding: 20px 0;
+    width: 80%;
+    padding: 20px 10px;
 
     color: var(--cor-grey-1);
 
@@ -56,7 +55,7 @@
 }
 
 .service-list ul li:hover {
-    background: #dddd;
+    background: #a3a3a331;
 }
 
 .service-info {
