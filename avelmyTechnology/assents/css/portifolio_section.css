@@ -148,3 +148,10 @@
     left: 45%;
     object-fit: cover;
 }
+
+.disable {
+    opacity: 0.3;
+    background-color: red;
+    cursor: not-allowed;
+    pointer-events: none;
+}
