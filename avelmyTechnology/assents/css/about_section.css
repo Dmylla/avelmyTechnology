@@ -86,15 +86,17 @@
     color: var(--cor-grey-1);
     margin-bottom: var(--margin-text);
     text-align: center;
-    font-weight: 100;
+    font-weight: 300;
+    min-width: 650px;
 }
 
 .about-section-description {
     font-size: 16px;
-    font-weight: 100;
-    color: var(--cor-grey);
+    font-weight: 300;
+    color: var(--cor-grey-1);
     line-height: 170%;
-    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
     
 }
 

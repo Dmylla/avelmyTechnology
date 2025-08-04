@@ -18,7 +18,7 @@
     text-align: center;
     font-size: var(--subtitle-size);
     color: var(--cor-grey-1);
-    font-weight: 100;
+    font-weight: 300;
     width: 70%;
     margin: 0 auto;
 }
@@ -31,14 +31,14 @@
 .contact-img {
     width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: end;
 
 }
 
 .contact-img img {
     width: 100%;
     max-width: 70%;
+    margin-right: 80px;
 }
 
 .contact-form {
@@ -71,15 +71,18 @@
 }
 
 .input-control input {
-    height: 40px;
+    height: 35px;
     padding: 10px;
     border: solid 1px var(--cor-grey);
     margin-bottom: 30px;
+    border-radius: 8px;
 }
 
 .input-control textarea {
     height: 40px;
     padding: 10px;
+    border-radius: 8px;
+
     border:solid 1px var(--cor-grey);
     margin-bottom: 30px;
     height: 100px;
@@ -89,6 +92,7 @@
 .button-submit-form {
     width: 60%;
     height: 50px;
+       border-radius: 8px;
 
     background: var(--cor-secondary);
     color: var(--cor-primary-dark);

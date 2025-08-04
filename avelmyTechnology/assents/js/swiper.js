@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper', {
+var swiper = new Swiper('.swiper.portifolio', {
 slidesPerView: 3,
 direction: getDirection(),
 navigation: {
@@ -9,31 +9,15 @@ on: {
   resize: function () {
     swiper.changeDirection(getDirection());
   },
-  reachEnd(){
-    // document.querySelector('.next').classList.add("disable")
-    // document.querySelector('.prev').classList.remove("disable")
-    // console.log('fim')
-  },
-  reachBeginning(){
-    // document.querySelector('.prev').classList.add("disable")
-    // document.querySelector('.next').classList.remove("disable")
-  },
-    fromEdge: function () {
-    // Remove feedback quando não está mais no início ou fim
-    document.querySelector('.next').classList.remove('disabled');
-    document.querySelector('.prev').classList.remove('disabled');
-  }
 },  
 });
 
 // logica que ativa e desativa botões do slider
-const cards = document.querySelectorAll(".swiper-slide")
-console.log(cards.length)
+const cards = document.querySelectorAll(".swiper-slide.portifolio-card")
 let contador = (cards.length - 3)
 
 document.addEventListener('DOMContentLoaded' , () =>{
   if(contador == cards.length - 3) {
-    console.log('disable')
     document.querySelector('.prev').classList.add("disable")
   }
 })
@@ -45,7 +29,6 @@ const nextBtn = document.querySelector('.next').addEventListener("click" , () =>
     document.querySelector('.prev').classList.remove("disable")
   }
 
-  console.log(contador)
   if(contador ==  0 ) {
     document.querySelector('.next').classList.add("disable")
   }
@@ -59,7 +42,6 @@ const nextBtn = document.querySelector('.next').addEventListener("click" , () =>
   }
 
   if(contador == cards.length - 3) {
-    console.log('disable')
     document.querySelector('.prev').classList.add("disable")
   }
 })
@@ -71,3 +53,58 @@ function getDirection() {
 
   return direction;
 }
+
+
+// testimonials 
+ var swipertestimonials = new Swiper(".mySwiper.testimonials", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".testimonials-button-next",
+        prevEl: ".testimonials-button-prev ",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+
+
+const cardstestimonials = document.querySelectorAll(".testimonials-card-control")
+let contadortestimonials = (cardstestimonials.length)
+console.log(contadortestimonials)
+
+document.addEventListener('DOMContentLoaded' , () =>{
+  if(contadortestimonials == cardstestimonials.length) {
+    document.querySelector('.testimonials-button-prev').classList.add("disable")
+  }
+})
+
+// button next
+const nextBtntestimonials = document.querySelector('.testimonials-button-next').addEventListener("click" , () => {
+  contadortestimonials -= 1
+  console.log(contadortestimonials)
+
+  if(contadortestimonials != cards.length) {
+    document.querySelector('.testimonials-button-prev').classList.remove("disable")
+  }
+
+  if(contadortestimonials ==  1 ) {
+    document.querySelector('.testimonials-button-next').classList.add("disable")
+  }
+})
+
+// button prev
+  const prevBtntestimonials = document.querySelector(".testimonials-button-prev").addEventListener('click' , () => {
+  contadortestimonials += 1
+
+  console.log(contadortestimonials)
+
+  if(contadortestimonials > 1) {
+    document.querySelector('.testimonials-button-next').classList.remove("disable")
+  }
+
+  if(contadortestimonials == cardstestimonials.length) {
+    document.querySelector('.testimonials-button-prev').classList.add("disable")
+  }
+})

@@ -6,7 +6,6 @@
 
     margin-top: 110px; 
     margin-bottom: 90px; 
-
 }
 
 .service-content {
@@ -21,7 +20,7 @@
 }
 
 .service-subtitle {
-    font-weight: 100;
+    font-weight: 300;
     color: var(--cor-grey-1);
     font-size: var(--subtitle-size);
 }
@@ -48,6 +47,7 @@
     border-bottom: solid 1px var(--cor-grey-1);
     width: 80%;
     padding: 20px 10px;
+    font-weight:300 ;
 
     color: var(--cor-grey-1);
 

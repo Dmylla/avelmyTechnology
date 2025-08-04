@@ -6,7 +6,6 @@
   align-items: center;
   height: auto;
   min-height: 800px;
-  /* background: #000; */
   position: relative;
 }
 
@@ -20,7 +19,7 @@
   font-size: var(--subtitle-size);
   color: var(--cor-grey-1);
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
   width: 70%;
   margin-bottom: 80px;
 }
@@ -55,7 +54,7 @@
 
 .differences-card p {
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   line-height: 150%;
   width: 250px;
