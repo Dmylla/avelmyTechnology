@@ -7,134 +7,23 @@
     box-sizing: border-box;
     font-family: poppins, sans-serif;
 }
-/* text style div */
-
-/* Primeira area do sire (navegação) */
-.containerNavbar{
-    background-image: url(../img/preimeiroDesign.svg);
-    width: 100%;
-    height: 760px;
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
-    position: relative;
-}
-
-.navbar{
-    z-index: 2;
-    display: flex;
-    justify-content: center ;
-    background-color: #ffff;
-    width: 1260px;
-    height: 55px;
-    margin: 0 auto;
-    border-radius: 30px;
-    margin-top: 30px;
-    gap: 300px;
-    text-align: center;
-    align-items: center;
-    
-}
-
-.logo{
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-}
-.itensNavbar{
-    display: flex;
-    gap: 30px;
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-    
-}
-.itensNavbar>li> a{
-    text-decoration: none;
-    color: black;
-
-}
-
-.linhacontainernavbar{
-    width: 900px;
-    margin: 0 auto;
-    margin-top: 30px;
-    border: none;
-    border-top: 2px dashed #1E90FF;
-    height: 0;
-}
-
-.buttonmenu{
-    background-color: #f3d263;
-    color: #ffff;
-    width: 180px;
-    height: 35px;
-    border-radius:12px ;
-    font-weight: bold;
-    font-size: 15px;
-    margin-left: 30px;
-    border: none;
-}
-
-.containerTextnavbar{
-    text-align: center;
-}
-
-.containerTextnavbar> h1{
-    text-align: center;
-    font-size: 62px;
-    margin-top: 150px;
-}
-.containerTextnavbar>p{
-    text-align: center;
-    font-size: 20px;
-    margin-top: 50px;
-    font-weight: bold;
-}
-
-.containerTextnavbar>button{
-    background-color: #f3d263;
-    margin-top: 30px;
-    width: 266px;
-    height: 50px;
-    border-radius:12px ;
-    font-weight: bold;
-    font-size: 20px;
-    border: none;
-}
-
-.textcolorblue{
-    color:#0000ff;
-}
-
-/* seção de sobres nois */
-.containerQuemSomos{
-    background-image: url(../img/segundoDesign.svg);
-}
-
-
-
-
-
 
 
 /* hero  */
 
 .hero-section {
-    background-image: url(../img/preimeiroDesign.svg);
     width: 100%;
-    height: 600px;
-    background-size: cover;
-    background-position: center;
+    height: 650px;
     position: relative;
 
     display: flex;
-    align-items: center;
-    justify-content: end;
+    justify-content: center;
     flex-direction: column;
 
+    background: #000;
+
 }
+
 .hero-section::after {
     content: "";
     position: absolute;
@@ -142,18 +31,17 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: #000000a9;
+    background: linear-gradient(to left, #000  , #0D3A57);
 }
 
-header img {
+.shape-hero {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 50px;
+    bottom: 40px;
 }
 
 .nav-bar {
-
     width: 80%;
     height: 45px;
     background-color: var(--cor-white);
@@ -212,19 +100,18 @@ header img {
 
 .hero-content {
     display: flex;
-    align-items: center;
-    align-self: center;
     flex-direction: column;
-    height: 500px;
+    width: 50%;
 
     z-index: 1;
 }
 
 .hero-content h1 {
     margin-top: var(--margin-text);
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bolder;
     color: var(--cor-white);
+    width: 500px;
 }
 
 .emphasis {
@@ -233,17 +120,16 @@ header img {
 
 .hero-content .hero-description {
     margin: var(--margin-text) 0;
-    max-width: 900px;
-    text-align: center;
-    font-size: 20px;
+    max-width: 500px;
+    font-size: 18px;
     line-height: 150%;
-    font-weight: bold;
+    font-weight: 200;
     color: var(--cor-white);
 }
 
 .hero-content .hero-sub-description {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 30px;
     color: var(--cor-white);
 }
@@ -252,7 +138,64 @@ header img {
     width: 300px;
     height: 50px;
     font-size: 23px;
-    transition: all 0.4s;
 }
 
 
+.emphasis-title {
+  background: linear-gradient(to left, #8D7A39, #F3D263);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.hero-content-control {
+    display: flex;
+    gap: 40px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.hero-img {
+    z-index: 1;
+    width: 50%;
+    position: relative;
+    object-fit: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.shape-hero-img, .shape-hero-img-1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to left, #0D3A57 , #0d395757);  
+    border-radius: 8px;
+    transform: rotate(43deg);
+    
+    position: absolute;
+    top: 0;
+    left: 34px;
+
+    z-index: -1;
+}
+
+.shape-hero-img-1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to left, #0D3A57 , #0d395757);
+    border-radius: 8px;
+    transform: rotate(198deg);
+    
+    position: absolute;
+    
+    z-index: -1;
+
+}
