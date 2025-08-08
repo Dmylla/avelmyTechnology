@@ -21,6 +21,8 @@
     color: var(--cor-grey-1);
     font-weight: 300;
     margin-bottom: var(--margin-text);
+    width: 70%;
+    text-align: center;
 }
 
 .portifolio {
