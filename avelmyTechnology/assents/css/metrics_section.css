@@ -5,7 +5,8 @@
 }
 
 .metrics-section-bg {
-    background-image: url("../img/banner-metrics-0.jpg");
+    background: #0D3A57;
+
     position: relative;
     height: auto    ;
 
@@ -14,14 +15,6 @@
     align-items: center;
 
     padding: 40px 0;
-}
-
-.metrics-section-bg::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #0000002f;
 }
 
 .metrics-shape {

@@ -106,3 +106,14 @@
     left: 97%;
     z-index: -1;
 }
+
+#lineSVG {
+    position: absolute;
+    z-index: -1;
+    top: 32% ;
+    left:34%;
+}
+
+#lineSVG path {
+    stroke: var(--cor-primary);
+}

@@ -176,13 +176,13 @@
 .shape-hero-img, .shape-hero-img-1 {
     width: 400px;
     height: 400px;
-    background: linear-gradient(to left, #0D3A57 , #0d395757);  
+    background: linear-gradient(to left, #0D3A57 , #0d39571d);  
     border-radius: 8px;
     transform: rotate(43deg);
     
     position: absolute;
-    top: 0;
-    left: 34px;
+    top: 12px;
+    left: 44px;
 
     z-index: -1;
 }
@@ -191,8 +191,9 @@
     width: 400px;
     height: 400px;
     background: linear-gradient(to left, #0D3A57 , #0d395757);
+    /* background: #000; */
     border-radius: 8px;
-    transform: rotate(198deg);
+    transform: rotate(200deg);
     
     position: absolute;
     

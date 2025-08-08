@@ -152,3 +152,27 @@
     top: 130%;
     left: 40%;
 }
+
+@keyframes float {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(60px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes float2 {
+  0% { transform: translateX(0); }
+  50% { transform: translatey(60px); }
+  100% { transform: translateX(0); }
+}
+
+.servivce-shape-4 ,
+.servivce-shape-5,
+.servivce-shape-6 {
+  animation: float2 30s linear infinite;
+}
+.servivce-shape-3,
+.servivce-shape-7,
+.servivce-shape-8,
+.servivce-shape-9 {
+  animation: float 30s linear infinite;
+}
