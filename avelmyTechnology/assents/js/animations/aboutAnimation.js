@@ -47,5 +47,4 @@ animateOnScroll(".shape-3", { start: "top 95%", x: -50, duration: 1 });
 
 // === Animações contínuas ===
 // loopAnimation(".shape-0", { y: -20, duration: 2 });
-// loopAnimation(".shape-1", { x: 20, duration: 2 });
-// loopAnimation(".shape-3", { y: -20, x: 20, duration: 4 });
+
