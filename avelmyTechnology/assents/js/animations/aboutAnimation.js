@@ -2,7 +2,7 @@
 function animateOnScroll(selector, options = {}) {
   const {
     start = "top 70%",
-    duration = 2,
+    duration = 1,
     y = 30,
     x = 0,
     opacity = 0

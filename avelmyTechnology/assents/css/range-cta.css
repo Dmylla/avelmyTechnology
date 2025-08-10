@@ -8,6 +8,8 @@
 
     position: relative;
     margin-bottom: 10rem;
+    
+    overflow: hidden;
 }
 
 .empahsis-2 {
