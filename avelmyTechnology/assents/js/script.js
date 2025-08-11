@@ -1,4 +1,4 @@
-import { services } from "../js/data.js"
+import { services } from "../js/data//data.js"
 const serviceData = services
 
 const listServices = document.querySelector('.list-service-content')

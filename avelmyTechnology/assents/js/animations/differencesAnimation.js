@@ -62,7 +62,7 @@ animation('.differences-card.three' , 'top 50%',)
 // shapes
 animation('.shape-differences-1' , 'top 90%')
 animation('.shape-differences-2' , 'top 70%' )
-animation('.shape-differences-3' , 'top 60%' )
+animation('.shape-differences-3' , 'top 50%' )
 
 animationX('.differences-element-1' , 'top 60%' )
 animationXN('.differences-element-2' , 'top 60%')
